@@ -58,6 +58,8 @@ module AWS
 
       attribute :dkim_verification_status
 
+      mutable_attribute :delivery_topic_arn, :from => :delivery_topic
+
       mutable_attribute :bounce_topic_arn, :from => :bounce_topic
 
       mutable_attribute :complaint_topic_arn, :from => :complaint_topic

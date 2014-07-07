@@ -200,7 +200,7 @@ module AWS
         client_opts[:identity] = identity
         case attr.name
         when :delivery_topic_arn
-            method = :set_delivery_notification_topic
+            method = :set_identity_notification_topic
             client_opts[:notification_type] = 'Delivery'
             client_opts[:sns_topic] = value if value
         when :bounce_topic_arn
